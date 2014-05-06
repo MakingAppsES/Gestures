@@ -6,6 +6,7 @@ import android.gesture.GestureLibraries;
 import android.gesture.GestureLibrary;
 import android.gesture.GestureOverlayView;
 import android.gesture.Prediction;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -31,6 +32,7 @@ public class Gestures extends Activity implements GestureOverlayView.OnGesturePe
 
         GestureOverlayView gesturesView = (GestureOverlayView) findViewById(R.id.gestures);
         gesturesView.addOnGesturePerformedListener(this);
+        gesturesView.setGestureColor(Color.RED);
 
         salida = (TextView) findViewById(R.id.salida);
     }
